@@ -1,8 +1,9 @@
 
 
-import { section1Component } from "./page-load";
+import { section1Component, section2Component } from "./page-load";
 import './style.css'
-const body = document.getElementById('content');
+const content = document.getElementById('content');
 
 
-body.appendChild(section1Component())
+content.appendChild(section1Component())
+content.appendChild(section2Component())
