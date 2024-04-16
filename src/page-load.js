@@ -1,4 +1,94 @@
+import logoImage1 from './logoimage1.png'
+
 import section1Image from './section1image.jpg'
+import card1Image from './card1image.png'
+import card2Image from './card2image.png'
+import card3Image from './card3image.png'
+import section4Image from './section4image.png'
+import section5Image from './section5image.png'
+
+function headerComponent() {
+    const headerContainer = document.createElement('header');
+const nav = document.createElement('nav');
+
+const wrapper = document.createElement('div');
+wrapper.id = 'wrapper'
+const logoContainer = document.createElement('div');
+logoContainer.id = 'nav-logo-container'
+const image = new Image();
+image.src = logoImage1;
+image.alt = 'turquoise and black bold Nutra Nation logo in capital letters'
+logoContainer.appendChild(image)
+
+const menuButton = document.createElement('button');
+menuButton.classList.add('menu-icon')
+menuButton.textContent = 'menu'
+
+wrapper.appendChild(logoContainer)
+wrapper.appendChild(menuButton)
+
+
+const ul = document.createElement('ul');
+ul.classList.add('nav-items')
+const li1 = document.createElement('li');
+const a1 = document.createElement('a');
+a1.href = '#';
+a1.textContent = 'process';
+li1.appendChild(a1)
+const li2 = document.createElement('li');
+const a2 = document.createElement('a')
+a2.href = '#';
+a2.textContent = 'about';
+li2.appendChild(a2)
+const li3 = document.createElement('li');
+const a3 = document.createElement('a');
+a3.href = '#';
+a3.textContent = 'team';
+li3.appendChild(a3)
+const li4 = document.createElement('li');
+const a4 = document.createElement('a');
+a4.href = '#';
+a4.textContent = 'contact';
+li4.appendChild(a4)
+
+ul.appendChild(li1)
+ul.appendChild(li2)
+ul.appendChild(li3)
+ul.appendChild(li4)
+
+
+menuButton.addEventListener('click',(event) => {
+const navItems = document.querySelector('.nav-items');
+navItems.classList.toggle('nav-items-open');
+
+const navItemsOpen = document.querySelector('.nav-items-open');
+
+if (navItemsOpen) {
+    navItemsOpen.addEventListener('click', () => {
+        navItems.classList.remove('nav-items-open');
+      });
+
+}
+
+
+
+})
+
+wrapper.appendChild(logoContainer)
+wrapper.appendChild(menuButton)
+nav.appendChild(wrapper)
+nav.appendChild(ul)
+
+
+
+
+
+headerContainer.appendChild(nav)
+
+    return headerContainer;
+}
+
+
 
 function section1Component() {
     const parentContainer = document.createElement('div');
@@ -46,6 +136,7 @@ parentContainer.id = 'section-2-parent-container'
 parentContainer.classList.add('sections-parent')
 
 const title = document.createElement('h1')
+title.id = 'section-2-title'
 title.classList.add('titles')
 title.textContent = "we always reach out for the top";
 
@@ -97,6 +188,177 @@ parentContainer.appendChild(paragraphContainer)
 return parentContainer;
 }
 
+function section3Component() {
+    const parentContainer = document.createElement('div');
+parentContainer.id = 'section-3-parent-container'
+parentContainer.classList.add('sections-parent')
+
+const title = document.createElement('h1')
+title.id = 'section-3-title'
+title.classList.add('titles')
+title.textContent = "holistic product development approach";
+
+const cardsContainer = document.createElement('div');
+cardsContainer.id = 'section-3-cards-container';
+
+const card1Item = document.createElement('div');
+card1Item.classList.add('card-items');
+const image1 = new Image();
+image1.src = card1Image;
+image1.alt = 'blueish green screen icon with settings icon on top right'
+const card1Title = document.createElement('h2');
+card1Title.classList.add('card-titles');
+card1Title.textContent = 'product web development'
+const card1Paragraph = document.createElement('p');
+card1Paragraph.classList.add('card-paragraphs');
+card1Paragraph.textContent ="Revolutionizing lifestyles, Nutranation crafts brands from the essence of women's everyday realities. Our real-time development process fosters dynamism, creativity, and personalized solutions."; 
+
+const card2Item = document.createElement('div');
+card2Item.classList.add('card-items');
+const image2 = new Image();
+image2.src = card2Image;
+image2.alt = 'blueish green screen icon with settings icon on top right'
+const card2Title = document.createElement('h2');
+card2Title.classList.add('card-titles');
+card2Title.textContent = 'branding & design'
+const card2Paragraph = document.createElement('p');
+card2Paragraph.classList.add('card-paragraphs');
+card2Paragraph.textContent ="As our brand evolves, our creative team springs into action, unlocking the latent potential of our products to sculpt captivating brands. From conception to completion, it's all made from us."; 
+
+const card3Item = document.createElement('div');
+card3Item.classList.add('card-items');
+const image3 = new Image();
+image3.src = card3Image;
+image3.alt = 'blueish green screen icon with settings icon on top right'
+const card3Title = document.createElement('h2');
+card3Title.classList.add('card-titles');
+card3Title.textContent = 'performance marketing'
+const card3Paragraph = document.createElement('p');
+card3Paragraph.classList.add('card-paragraphs');
+card3Paragraph.textContent ="In anticipation of the product and brand launch, we meticulously craft our marketing strategy. Our continuous process of performance marketing optimisation fuels the creation of impactful advertising campaigns."; 
+
+
+card1Item.appendChild(image1)
+card1Item.appendChild(card1Title)
+card1Item.appendChild(card1Paragraph)
+
+card2Item.appendChild(image2)
+card2Item.appendChild(card2Title)
+card2Item.appendChild(card2Paragraph)
+
+card3Item.appendChild(image3)
+card3Item.appendChild(card3Title)
+card3Item.appendChild(card3Paragraph)
+
+
+
+cardsContainer.appendChild(card1Item)
+cardsContainer.appendChild(card2Item)
+cardsContainer.appendChild(card3Item)
+
+parentContainer.appendChild(title)
+parentContainer.appendChild(cardsContainer)
+
+
+
+
+
+return parentContainer;
+}
+
+function section4Component() {
+    const parentContainer = document.createElement('div');
+parentContainer.id = 'section-4-parent-container'
+parentContainer.classList.add('sections-parent')
+
+const imageWrapper = document.createElement('div');
+imageWrapper.classList.add('mobile-image-wrapper')
+
+const image = new Image();
+image.src = section4Image;
+image.alt = 'athletic women working on a laptop'
+
+imageWrapper.appendChild(image)
+
+const title = document.createElement('h1')
+title.id = 'section-4-title'
+title.classList.add('titles')
+title.textContent = "holistic product development approach"
+
+const p1 = document.createElement('p');
+p1.classList.add('paragraph-text')
+p1.textContent = "Our triumph stems from enhancing the lives of our customers, a mission driving every facet of our operation.";
+const p2 = document.createElement('p');
+p2.classList.add('paragraph-text')
+p2.textContent = "We relentlessly refine our processes, scrutinizing every detail to deliver unparalleled quality.";
+
+parentContainer.appendChild(imageWrapper)
+parentContainer.appendChild(title)
+parentContainer.appendChild(p1)
+parentContainer.appendChild(p2)
+
+return parentContainer;
+}
+function section5Component() {
+    const parentContainer = document.createElement('div');
+parentContainer.id = 'section-5-parent-container'
+parentContainer.classList.add('sections-parent')
+
+const imageWrapper = document.createElement('div');
+imageWrapper.classList.add('mobile-image-wrapper')
+
+const image = new Image();
+image.src = section5Image;
+image.alt = 'athletic women working on a laptop'
+
+imageWrapper.appendChild(image)
+
+const title = document.createElement('h1')
+title.id = 'section-5-title'
+title.classList.add('titles')
+title.textContent = "we stand as a worldwide force spanning continents"
+
+const p1 = document.createElement('p');
+p1.classList.add('paragraph-text')
+p1.textContent = "Our international company embodies modernity, fostering a diverse and collaborative team environment.";
+const p2 = document.createElement('p');
+p2.classList.add('paragraph-text')
+p2.textContent = "With offices worldwide, we offer unmatched opportunities for professional growth and cross-cultural engagement.";
+
+parentContainer.appendChild(imageWrapper)
+parentContainer.appendChild(title)
+parentContainer.appendChild(p1)
+parentContainer.appendChild(p2)
+
+return parentContainer;
+}
+function section6Component() {
+    const parentContainer = document.createElement('div');
+parentContainer.id = 'section-6-parent-container'
+parentContainer.classList.add('sections-parent')
+
+const title = document.createElement('h1')
+title.id = 'section-6-title'
+title.classList.add('titles')
+title.textContent = "we're on the hunt for exceptional talent"
+
+const p1 = document.createElement('p');
+p1.classList.add('paragraph-text')
+p1.textContent = "Are you ready to shine? Are you passionate about solving challenges, driving brand creation from inception to fruition? Join our team of trailblazers. Get in touch today.";
+
+const anchorButton = document.createElement('a');
+anchorButton.classList.add('anchor-buttons')
+anchorButton.textContent = 'apply now';
+
+
+parentContainer.appendChild(title)
+parentContainer.appendChild(p1)
+parentContainer.appendChild(anchorButton)
+
+return parentContainer;
+}
+
+
 
 
 
@@ -123,7 +385,13 @@ function wrapWordInSpan(word, h1Element) {
 
 export {
     section1Image,
+    headerComponent,
 section1Component,
 section2Component,
+section3Component,
+section4Component,
+section5Component,
+section6Component,
+
 
 }; 
