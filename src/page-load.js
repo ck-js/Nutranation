@@ -1,4 +1,5 @@
 import logoImage1 from './logoimage1.png'
+import mobileMenuIcon from './mobile-menu-icon.jpg'
 import logoImage2 from './logoimage2.png'
 
 import section1Image from './section1image.jpg'
@@ -23,11 +24,13 @@ logoContainer.appendChild(image)
 
 const menuButton = document.createElement('button');
 menuButton.classList.add('menu-icon')
-menuButton.textContent = 'menu'
+menuButton.ariaLabel = 'click to open navigation menu'
+const image2 = new Image();
+image2.src = mobileMenuIcon;
+menuButton.appendChild(image2)
 
 wrapper.appendChild(logoContainer)
 wrapper.appendChild(menuButton)
-
 
 const ul = document.createElement('ul');
 ul.classList.add('nav-items')
