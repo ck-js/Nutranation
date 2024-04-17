@@ -1,4 +1,5 @@
 import logoImage1 from './logoimage1.png'
+import logoImage2 from './logoimage2.png'
 
 import section1Image from './section1image.jpg'
 import card1Image from './card1image.png'
@@ -59,6 +60,8 @@ ul.appendChild(li4)
 
 menuButton.addEventListener('click',(event) => {
 const navItems = document.querySelector('.nav-items');
+
+
 navItems.classList.toggle('nav-items-open');
 
 const navItemsOpen = document.querySelector('.nav-items-open');
@@ -357,7 +360,88 @@ parentContainer.appendChild(anchorButton)
 
 return parentContainer;
 }
+function section7Component() {
+    const parentContainer = document.createElement('footer')
+const navContainer = document.createElement('nav');
+navContainer.id = 'nav-2';
+const h4 = document.createElement('h4');
+h4.textContent = 'Website';
 
+const ul = document.createElement('ul');
+ul.id = 'nav-items-2'
+const li1 = document.createElement('li');
+const a1 = document.createElement('a');
+a1.href = '#';
+a1.textContent = 'process';
+li1.appendChild(a1)
+const li2 = document.createElement('li');
+const a2 = document.createElement('a')
+a2.href = '#';
+a2.textContent = 'about';
+li2.appendChild(a2)
+const li3 = document.createElement('li');
+const a3 = document.createElement('a');
+a3.href = '#';
+a3.textContent = 'team';
+li3.appendChild(a3)
+
+ul.appendChild(li1)
+ul.appendChild(li2)
+ul.appendChild(li3)
+
+const h4Two = document.createElement('h4');
+h4Two.textContent = 'Information';
+
+const ul2 = document.createElement('ul');
+ul2.id = 'nav-items-2'
+const li4 = document.createElement('li');
+const a4= document.createElement('a');
+a4.href = '#';
+a4.textContent = 'process';
+li4.appendChild(a4)
+const li5 = document.createElement('li');
+const a5 = document.createElement('a')
+a5.href = '#';
+a5.textContent = 'about';
+li5.appendChild(a5)
+const li6 = document.createElement('li');
+const a6 = document.createElement('a');
+a6.href = '#';
+a6.textContent = 'team';
+li6.appendChild(a6)
+
+ul2.appendChild(li4)
+ul2.appendChild(li5)
+ul2.appendChild(li6)
+
+navContainer.appendChild(h4)
+navContainer.appendChild(ul)
+navContainer.appendChild(h4Two)
+navContainer.appendChild(ul2)
+
+const navLogoContainer = document.createElement('div');
+navLogoContainer.id = 'nav-logo-container';
+
+const logoImage = new Image();
+logoImage.src = logoImage2;
+
+navLogoContainer.appendChild(logoImage)
+
+const hr = document.createElement('hr');
+
+const p = document.createElement('p');
+p.textContent = 'Copyright 2024 Nutranation LLC';
+
+
+parentContainer.appendChild(navContainer)
+parentContainer.appendChild(navLogoContainer)
+parentContainer.appendChild(hr)
+parentContainer.appendChild(p)
+
+
+
+    return parentContainer;
+}
 
 
 
@@ -392,6 +476,7 @@ section3Component,
 section4Component,
 section5Component,
 section6Component,
+section7Component,
 
 
 }; 
