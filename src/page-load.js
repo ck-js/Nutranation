@@ -3,6 +3,7 @@ import mobileMenuIcon from './mobile-menu-icon.jpg'
 import logoImage2 from './logoimage2.png'
 
 import section1Image from './section1image.jpg'
+import section1Image2 from './section1image2.png'
 import card1Image from './card1image.png'
 import card2Image from './card2image.png'
 import card3Image from './card3image.png'
@@ -60,7 +61,6 @@ ul.appendChild(li2)
 ul.appendChild(li3)
 ul.appendChild(li4)
 
-
 menuButton.addEventListener('click',(event) => {
 const navItems = document.querySelector('.nav-items');
 
@@ -80,10 +80,17 @@ if (navItemsOpen) {
 
 })
 
+const anchorButton = document.createElement('a');
+anchorButton.id = 'nav-anchor-button'
+anchorButton.classList.add('anchor-buttons')
+anchorButton.textContent = 'lets connect'
+
+
 wrapper.appendChild(logoContainer)
 wrapper.appendChild(menuButton)
 nav.appendChild(wrapper)
 nav.appendChild(ul)
+nav.appendChild(anchorButton)
 
 
 
@@ -102,13 +109,25 @@ parentContainer.id = 'section-1-parent-container'
 parentContainer.classList.add('sections-parent')
 
 const imageWrapper = document.createElement('div');
+imageWrapper.id = 'section-1-mobile-image-wrapper';
 imageWrapper.classList.add('mobile-image-wrapper')
 
 const image = new Image();
 image.src = section1Image;
 image.alt = 'caucasion portrait of a healthy women with blue eyes and blond brunette hair with a big smile'
 
+// const imageWrapper2 = document.createElement('div');
+// imageWrapper2.id = 'section-1-desktop-image-wrapper';
+// imageWrapper2.classList.add('mobile-image-wrapper')
+
+const image2 = new Image();
+image2.id = 'section-1-image-2'
+image2.src = section1Image2;
+
 imageWrapper.appendChild(image)
+// imageWrapper2.appendChild(image2)
+
+
 
 const title = document.createElement('h1')
 title.classList.add('titles')
@@ -128,6 +147,7 @@ anchorButton.classList.add('anchor-buttons')
 anchorButton.textContent = 'contact us';
 
 parentContainer.appendChild(imageWrapper)
+// parentContainer.appendChild(imageWrapper2)
 parentContainer.appendChild(title)
 parentContainer.appendChild(p1)
 parentContainer.appendChild(p2)
@@ -148,7 +168,8 @@ title.textContent = "we always reach out for the top";
 
 const paragraphContainer = document.createElement('div');
 paragraphContainer.id = 'section-2-paragraph-container';
-
+const p1Wrapper = document.createElement('div');
+p1Wrapper.classList.add('section-2-p-wrapper');
 const p1 = document.createElement('p');
 p1.id = 'section-2-p1';
 p1.classList.add('paragraph-titles')
@@ -157,7 +178,11 @@ const p2 = document.createElement('p');
 p2.id = 'section-2-p2';
 p2.classList.add('paragraph-texts')
 p2.textContent = "launched";
+p1Wrapper.appendChild(p1)
+p1Wrapper.appendChild(p2)
 
+const p3Wrapper = document.createElement('div');
+p3Wrapper.classList.add('section-2-p-wrapper')
 const p3 = document.createElement('p');
 p3.id = 'section-2-p3';
 p3.classList.add('paragraph-titles')
@@ -166,7 +191,11 @@ const p4 = document.createElement('p');
 p4.id = 'section-2-p4';
 p4.classList.add('paragraph-texts')
 p4.textContent = "customers";
+p3Wrapper.appendChild(p3)
+p3Wrapper.appendChild(p4)
 
+const p5Wrapper = document.createElement('div');
+p5Wrapper.classList.add('section-2-p-wrapper');
 const p5 = document.createElement('p');
 p5.id = 'section-2-p5';
 p5.classList.add('paragraph-titles')
@@ -175,14 +204,17 @@ const p6 = document.createElement('p');
 p6.id = 'section-2-p6';
 p6.classList.add('paragraph-texts')
 p6.textContent = "countries";
+p5Wrapper.appendChild(p5)
+p5Wrapper.appendChild(p6)
 
 
-paragraphContainer.appendChild(p1)
-paragraphContainer.appendChild(p2)
-paragraphContainer.appendChild(p3)
-paragraphContainer.appendChild(p4)
-paragraphContainer.appendChild(p5)
-paragraphContainer.appendChild(p6)
+paragraphContainer.appendChild(p1Wrapper)
+paragraphContainer.appendChild(p3Wrapper)
+paragraphContainer.appendChild(p5Wrapper)
+// paragraphContainer.appendChild(p3)
+// paragraphContainer.appendChild(p4)
+// paragraphContainer.appendChild(p5)
+// paragraphContainer.appendChild(p6)
 
 parentContainer.appendChild(title)
 parentContainer.appendChild(paragraphContainer)

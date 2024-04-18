@@ -1,4 +1,4 @@
-
+import section1Image2 from './section1image2.png'
 
 import { headerComponent, section1Component, section2Component, section3Component, section4Component, section5Component, section6Component, section7Component } from "./page-load";
 import './style.css'
@@ -28,3 +28,21 @@ content.appendChild(section7Component())
 
 // }
 
+const section1Container = document.getElementById('section-1-parent-container')
+// set background if desktop window width
+if (window.innerWidth <= 767) {
+    section1Container.style.backgroundImage = 'none'
+    } else {
+    section1Container.style.backgroundImage = `url(${section1Image2})`
+    }
+
+window.addEventListener('resize', () => {
+
+if (window.innerWidth <= 767) {
+    section1Container.style.backgroundImage = 'none'
+    } else {
+    section1Container.style.backgroundImage = `url(${section1Image2})`
+    }
+
+
+})
