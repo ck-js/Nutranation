@@ -310,6 +310,7 @@ parentContainer.id = 'section-4-parent-container'
 parentContainer.classList.add('sections-parent')
 
 const imageWrapper = document.createElement('div');
+imageWrapper.id = 'section-4-image-wrapper';
 imageWrapper.classList.add('mobile-image-wrapper')
 
 const image = new Image();
@@ -317,6 +318,8 @@ image.src = section4Image;
 image.alt = 'athletic women working on a laptop'
 
 imageWrapper.appendChild(image)
+const textContainer = document.createElement('div');
+textContainer.id = 'section-4-text-container';
 
 const title = document.createElement('h1')
 title.id = 'section-4-title'
@@ -330,10 +333,16 @@ const p2 = document.createElement('p');
 p2.classList.add('paragraph-text')
 p2.textContent = "We relentlessly refine our processes, scrutinizing every detail to deliver unparalleled quality.";
 
+textContainer.appendChild(title)
+textContainer.appendChild(p1)
+textContainer.appendChild(p2)
+
 parentContainer.appendChild(imageWrapper)
-parentContainer.appendChild(title)
-parentContainer.appendChild(p1)
-parentContainer.appendChild(p2)
+parentContainer.appendChild(textContainer)
+
+// parentContainer.appendChild(title)
+// parentContainer.appendChild(p1)
+// parentContainer.appendChild(p2)
 
 return parentContainer;
 }
@@ -351,6 +360,9 @@ image.alt = 'athletic women working on a laptop'
 
 imageWrapper.appendChild(image)
 
+const textContainer = document.createElement('div');
+textContainer.id = 'section-5-text-container';
+
 const title = document.createElement('h1')
 title.id = 'section-5-title'
 title.classList.add('titles')
@@ -363,10 +375,17 @@ const p2 = document.createElement('p');
 p2.classList.add('paragraph-text')
 p2.textContent = "With offices worldwide, we offer unmatched opportunities for professional growth and cross-cultural engagement.";
 
+textContainer.appendChild(title)
+textContainer.appendChild(p1)
+textContainer.appendChild(p2)
+
 parentContainer.appendChild(imageWrapper)
-parentContainer.appendChild(title)
-parentContainer.appendChild(p1)
-parentContainer.appendChild(p2)
+parentContainer.appendChild(textContainer)
+
+
+// parentContainer.appendChild(title)
+// parentContainer.appendChild(p1)
+// parentContainer.appendChild(p2)
 
 return parentContainer;
 }
@@ -375,6 +394,8 @@ function section6Component() {
 parentContainer.id = 'section-6-parent-container'
 parentContainer.classList.add('sections-parent')
 
+const textContainer = document.createElement('div');
+textContainer.id = 'section-6-text-container'
 const title = document.createElement('h1')
 title.id = 'section-6-title'
 title.classList.add('titles')
@@ -383,14 +404,16 @@ title.textContent = "we're on the hunt for exceptional talent"
 const p1 = document.createElement('p');
 p1.classList.add('paragraph-text')
 p1.textContent = "Are you ready to shine? Are you passionate about solving challenges, driving brand creation from inception to fruition? Join our team of trailblazers. Get in touch today.";
+textContainer.appendChild(title)
+textContainer.appendChild(p1)
+
 
 const anchorButton = document.createElement('a');
 anchorButton.classList.add('anchor-buttons')
 anchorButton.textContent = 'apply now';
 
 
-parentContainer.appendChild(title)
-parentContainer.appendChild(p1)
+parentContainer.appendChild(textContainer)
 parentContainer.appendChild(anchorButton)
 
 return parentContainer;
