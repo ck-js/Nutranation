@@ -352,6 +352,7 @@ parentContainer.id = 'section-5-parent-container'
 parentContainer.classList.add('sections-parent')
 
 const imageWrapper = document.createElement('div');
+imageWrapper.id = 'section-5-image-wrapper';
 imageWrapper.classList.add('mobile-image-wrapper')
 
 const image = new Image();
@@ -422,6 +423,9 @@ function section7Component() {
     const parentContainer = document.createElement('footer')
 const navContainer = document.createElement('nav');
 navContainer.id = 'nav-2';
+
+const navItemContainer1 = document.createElement('div');
+navItemContainer1.classList.add('nav-2-item-containers');
 const h4 = document.createElement('h4');
 h4.textContent = 'Website';
 
@@ -447,6 +451,11 @@ ul.appendChild(li1)
 ul.appendChild(li2)
 ul.appendChild(li3)
 
+navItemContainer1.appendChild(h4);
+navItemContainer1.appendChild(ul);
+
+const navItemContainer2 = document.createElement('div');
+navItemContainer2.classList.add('nav-2-item-containers')
 const h4Two = document.createElement('h4');
 h4Two.textContent = 'Information';
 
@@ -472,11 +481,14 @@ ul2.appendChild(li4)
 ul2.appendChild(li5)
 ul2.appendChild(li6)
 
-navContainer.appendChild(h4)
-navContainer.appendChild(ul)
-navContainer.appendChild(h4Two)
-navContainer.appendChild(ul2)
+navItemContainer2.appendChild(h4Two)
+navItemContainer2.appendChild(ul2)
 
+navContainer.appendChild(navItemContainer1)
+navContainer.appendChild(navItemContainer2)
+
+const nav2TextContainer2 = document.createElement('div');
+nav2TextContainer2.id ='nav-2-text-container-2'
 const navLogoContainer = document.createElement('div');
 navLogoContainer.id = 'nav-logo-container';
 
@@ -489,12 +501,20 @@ const hr = document.createElement('hr');
 
 const p = document.createElement('p');
 p.textContent = 'Copyright 2024 Nutranation LLC';
+const p2 = document.createElement('p');
+p2.textContent = 'All rights reserved';
+
+nav2TextContainer2.appendChild(navLogoContainer)
+nav2TextContainer2.appendChild(hr)
+nav2TextContainer2.appendChild(p)
+nav2TextContainer2.appendChild(p2)
 
 
 parentContainer.appendChild(navContainer)
-parentContainer.appendChild(navLogoContainer)
-parentContainer.appendChild(hr)
-parentContainer.appendChild(p)
+parentContainer.appendChild(nav2TextContainer2)
+// parentContainer.appendChild(navLogoContainer)
+// parentContainer.appendChild(hr)
+// parentContainer.appendChild(p)
 
 
 
