@@ -128,7 +128,6 @@ imageWrapper.appendChild(image)
 // imageWrapper2.appendChild(image2)
 
 
-
 const title = document.createElement('h1')
 title.classList.add('titles')
 title.textContent = "we are igniting innovative brands"
@@ -138,20 +137,24 @@ wrapWordInSpan('innovative', title)
 const p1 = document.createElement('p');
 p1.classList.add('paragraph-text')
 p1.textContent = "We are shaping the global nutrition market with pioneering solutions.";
-const p2 = document.createElement('p');
-p2.classList.add('paragraph-text')
-p2.textContent = "At Nutranation, we're redefining the standard for high-quality direct-to-customers nutrition brands worldwide.";
+const paragraph = document.createElement('p');
+paragraph.id = 'section-1-paragraph-2'
+paragraph.classList.add('paragraph-text')
+paragraph.textContent = "At Nutranation we're redefining the standard for high-quality direct-to-customers nutrition brands worldwide.";
 
+wrapWordInSpan('Nutranation', paragraph)
 const anchorButton = document.createElement('a');
 anchorButton.classList.add('anchor-buttons')
 anchorButton.textContent = 'contact us';
+
 
 parentContainer.appendChild(imageWrapper)
 // parentContainer.appendChild(imageWrapper2)
 parentContainer.appendChild(title)
 parentContainer.appendChild(p1)
-parentContainer.appendChild(p2)
+parentContainer.appendChild(paragraph)
 parentContainer.appendChild(anchorButton)
+
 
 return parentContainer;
 }
@@ -555,6 +558,7 @@ section4Component,
 section5Component,
 section6Component,
 section7Component,
+wrapWordInSpan,
 
 
 }; 

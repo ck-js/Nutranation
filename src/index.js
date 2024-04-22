@@ -1,6 +1,6 @@
 import section1Image2 from './section1image2.png'
 
-import { headerComponent, section1Component, section2Component, section3Component, section4Component, section5Component, section6Component, section7Component } from "./page-load";
+import { headerComponent, section1Component, section2Component, section3Component, section4Component, section5Component, section6Component, section7Component, wrapWordInSpan } from "./page-load";
 import './style.css'
 
 const body = document.body;
@@ -46,3 +46,7 @@ if (window.innerWidth <= 767) {
 
 
 })
+
+
+
+
