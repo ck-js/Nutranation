@@ -67,6 +67,10 @@
 body {
     /* background-color: var(--turquoise-font-color); */
     background-color: var(--white-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 
 }    
@@ -238,7 +242,7 @@ overflow: hidden;
     margin-bottom: 10px;
 }
 #section-3-parent-container {
-padding: 5px;
+padding: 20px;
 
 }
 #section-3-title {
@@ -254,7 +258,8 @@ padding: 5px;
     /* border: 3px solid black; */
     background-color: var(--white-smoke-font-color);
     text-align: left;
-    padding: 20px;
+    
+    padding: 30px 20px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -286,26 +291,39 @@ line-height: 1.2;
     margin-bottom: 25px;
 }
 #section-4-text-container {
-    
-    overflow-wrap: break-word;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+    word-wrap: break-word;
     padding: 0 10px;
 }
 
 
 #section-4-text-container p {
 line-height: 1;
-width: 30ch;
+/* width: 30ch; */
 margin-bottom: 20px;
-overflow-wrap: break-word;
+/* overflow-wrap: break-word; */
 
 
 
 }
+/* #section-5-parent-container {
+width: 100%;
 
+
+} */
 #section-5-text-container {
-    
-    overflow-wrap: break-word;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
     padding: 0 10px;
+    /* border: 4px solid black; */
 }
 
 
@@ -315,19 +333,36 @@ overflow-wrap: break-word;
 }
 #section-5-text-container p {
     line-height: 1;
-    width: 30ch;
+    /* width: 30ch; */
     margin-bottom: 20px;
-    overflow-wrap: break-word;
+    
     
     }
+#section-6-parent-container {
+    background-color: #f8f8f8;
+    /* border: 3px solid black; */
+    width: 100%;
+}
+#section-6-text-container {
+    /* border: 3px solid black; */
+    word-wrap: break-word;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #section-6-title {
     margin-bottom: 25px;
     width: 18ch;
 }
 
 #section-6-text-container p {
-width: 40ch;
+/* width: 40ch; */
+text-align: center;
 margin-bottom: 20px;
+
 }
 
 
