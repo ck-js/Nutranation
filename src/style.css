@@ -31,8 +31,8 @@
 
 --desktop-small-spacing: 50px;
 --desktop-extra-small-font-size: calc(4px + 0.75vw);
---desktop-text-font-size: calc(6px + 0.75vw);;
---desktop-title-font-size: calc(20px + 1vw);
+--desktop-text-font-size: calc(8px + 0.75vw);;
+--desktop-title-font-size: calc(22px + 1vw);
 
     --mobile-EXTRA-small-spacing: 25px;
 --mobile-small-spacing: 50px;
@@ -290,7 +290,7 @@ margin-bottom: 20px;
 
 }
 #section-5-title {
-    width: 20ch;
+    width: 15ch;
     margin-bottom: 25px;
 }
 #section-5-text-container p {
@@ -389,6 +389,7 @@ footer p {
             padding-bottom: 10px;
             background-color: var(--white-smoke-font-color);
             /* padding: 25px 25px 15px; */
+            overflow: hidden;
           }
           nav {
             width: 100%;
@@ -494,7 +495,7 @@ footer p {
         #section-1-parent-container h1 {
             color: var(--white-font-color);
             width: 18ch;
-            
+        font-size: 40px;    
         }
         #span-3 {
             color: var(--full-black-font-color);
@@ -503,6 +504,7 @@ footer p {
         #section-1-parent-container p {
             color: var(--white-font-color);
             width: 40ch;
+            font-size: 22px;
         }
         #span-1 {
 font-family: montserat-variable-weight;
@@ -512,7 +514,9 @@ font-weight: 600;
         #section-1-paragraph-2 {
             margin-bottom: 20px;
         }
+#section-1-parent-container a {
 
+}
 
 #section-2-parent-container {
     display: flex;
@@ -573,14 +577,14 @@ font-size: var(--desktop-text-font-size);
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    column-gap: 25px;
+    /* column-gap: 25px; */
     /* border: 3px solid black; */
 }
 .card-items {
     background-color: var(--white-smoke-font-color);
     width: 30%;
   /* border: 2px solid black; */
-  padding: 50px 10px;
+  padding: 50px 25px;
   word-wrap: break-word;
     
 }
@@ -660,6 +664,7 @@ background-color: #f8f8f8;
 #section-6-title {
     width: 40ch;
     margin-bottom: 10px;
+    font-size: 24px;
 }
 #section-6-text-container {
     flex-direction: column;
