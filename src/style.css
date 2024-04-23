@@ -282,13 +282,30 @@ line-height: 1.2;
     width: 20ch;
     margin-bottom: 25px;
 }
+#section-4-text-container {
+    
+    overflow-wrap: break-word;
+    padding: 0 10px;
+}
+
+
 #section-4-text-container p {
 line-height: 1;
 width: 40ch;
 margin-bottom: 20px;
+overflow-wrap: break-word;
+
 
 
 }
+
+#section-5-text-container {
+    
+    overflow-wrap: break-word;
+    padding: 0 10px;
+}
+
+
 #section-5-title {
     width: 15ch;
     margin-bottom: 25px;
@@ -297,7 +314,7 @@ margin-bottom: 20px;
     line-height: 1;
     width: 40ch;
     margin-bottom: 20px;
-    
+    overflow-wrap: break-word;
     
     }
 #section-6-title {
