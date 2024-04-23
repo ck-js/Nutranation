@@ -419,6 +419,17 @@ footer p {
 
 }
 @media (min-width: 768px) {
+
+:root {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
     body {
         max-width: 1600px;
         background-color: var(--white-font-color);
@@ -426,11 +437,18 @@ footer p {
         font-family: var(--extra-bold-montserat-font);
         /* font-size: var(--desktop-text-font-size); */
         font-size: var(--desktop-text-font-size);
-        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
         
         }
         /* #content {
-            
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
         } */
         
         header {
