@@ -238,7 +238,7 @@ overflow: hidden;
     margin-bottom: 10px;
 }
 #section-3-parent-container {
-
+padding: 5px;
 
 }
 #section-3-title {
@@ -247,21 +247,22 @@ overflow: hidden;
 }
 #section-3-cards-container {
     /* border: 3px solid black; */
-    width: 90%;
+    
 }
 .card-items {
+    max-width: 100%;
     /* border: 3px solid black; */
     background-color: var(--white-smoke-font-color);
     text-align: left;
-    padding: 10px 20px;
+    padding: 20px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
 justify-content: center;
 align-items: start;
     flex-shrink: 2;
-    overflow-wrap: break-word;
-    overflow: hidden;
+    word-wrap: break-word;
+    
     row-gap: 20px;
 
 }
@@ -275,8 +276,10 @@ font-family: var(--extra-bold-montserat-font);
 .card-paragraphs {
     color: var(--full-black-font-color);
 font-family: var(--extra-thin-montserat-font);
-width: 50ch;
+
+
 line-height: 1.2;
+
 }
 #section-4-title {
     width: 20ch;
