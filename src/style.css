@@ -74,6 +74,7 @@
         box-sizing: border-box;
     }
 :root {
+
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -83,7 +84,7 @@ align-items: center;
 }
 
 body {
-    width: 100%;
+    max-width: 761px;
     background-color: var(--white-font-color);
     display: flex;
     flex-direction: column;
@@ -92,6 +93,13 @@ body {
     
 
 }    
+#content {
+    max-width: 761px;
+    
+    }
+
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -116,8 +124,8 @@ width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid black;
-padding-left: 100px;
+    /* border: 3px solid black; */
+/* padding-left: 100px; */
 
 }
 #nav-logo-container {
