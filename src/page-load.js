@@ -94,8 +94,6 @@ nav.appendChild(anchorButton)
 
 
 
-
-
 headerContainer.appendChild(nav)
 
     return headerContainer;

@@ -16,7 +16,10 @@ content.appendChild(section3Component())
 content.appendChild(section4Component())
 content.appendChild(section5Component())
 content.appendChild(section6Component())
-content.appendChild(section7Component())
+body.appendChild(section7Component())
+
+
+
 
 // const navItems = document.querySelector('.nav-items');
 // const navItemsOpen = document.querySelector('.nav-items-open');
