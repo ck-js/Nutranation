@@ -67,7 +67,7 @@
   
 
 
-@media (max-width:767px) {
+@media (max-width: 860px) {
     * {
         padding: 0;
         margin: 0;
@@ -436,7 +436,7 @@ footer p {
 
 
 }
-@media (min-width: 768px) {
+@media (min-width: 861px) {
 
 :root {
 
@@ -444,9 +444,11 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 body {
-        max-width: 1600px;
+
+max-width: 1920px;
         background-color: var(--white-font-color);
         color: var(--full-black-font-color);
         font-family: var(--extra-bold-montserat-font);
@@ -457,6 +459,12 @@ body {
     align-items: center;
     border: 3px solid black;    
         }
+#content {
+max-width: 1599px;
+
+}
+
+
         /* #content {
         display: flex;
         flex-direction: column;
@@ -464,7 +472,13 @@ body {
         align-items: center;    
         } */
         
+#content {
+    
+}
+
+
         header {
+            max-width: 1599px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -573,6 +587,7 @@ body {
         
         }
         #section-1-parent-container {
+            max-width: 1599px;    
         padding: 200px 100px;
         background-size: cover;
         background-position: center;
@@ -756,6 +771,8 @@ width: 50ch;
  justify-content: space-around;
  align-items: center;
  padding: 63px 0;
+ padding-left: 100px;
+ padding-right: 50px;
 background-color: #f8f8f8;
 
 
@@ -764,21 +781,26 @@ background-color: #f8f8f8;
     width: 40ch;
     margin-bottom: 10px;
     
+    
 }
 #section-6-text-container {
     flex-direction: column;
+    border: 3px solid black;
 }
 #section-6-text-container p {
 width: 65ch;
 
 }
 footer {
+
     background-color: var(--full-black-font-color);
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
     padding: 50px 0;
+
+    
     
 }
 #nav-2 {
@@ -829,3 +851,23 @@ width: 40ch;
 font-size: 14px;
 }
 }
+@media (max-width: 1200px) {
+
+
+    #section-6-title {
+        width: 40ch;
+        margin-bottom: 10px;
+        font-size: 26px;
+        
+        
+    }
+    #section-6-text-container p {
+        width: 55ch;
+        
+        }
+
+
+
+
+}
+
