@@ -37,22 +37,22 @@ const ul = document.createElement('ul');
 ul.classList.add('nav-items')
 const li1 = document.createElement('li');
 const a1 = document.createElement('a');
-a1.href = '#';
+a1.href = '#section-2-parent-container';
 a1.textContent = 'process';
 li1.appendChild(a1)
 const li2 = document.createElement('li');
 const a2 = document.createElement('a')
-a2.href = '#';
+a2.href = '#section-3-parent-container';
 a2.textContent = 'about';
 li2.appendChild(a2)
 const li3 = document.createElement('li');
 const a3 = document.createElement('a');
-a3.href = '#';
+a3.href = '#section-4-parent-container';
 a3.textContent = 'team';
 li3.appendChild(a3)
 const li4 = document.createElement('li');
 const a4 = document.createElement('a');
-a4.href = '#';
+a4.href = '#section-6-parent-container';
 a4.textContent = 'contact';
 li4.appendChild(a4)
 
@@ -434,17 +434,17 @@ const ul = document.createElement('ul');
 ul.id = 'nav-items-2'
 const li1 = document.createElement('li');
 const a1 = document.createElement('a');
-a1.href = '#';
+a1.href = '#section-2-parent-container';
 a1.textContent = 'process';
 li1.appendChild(a1)
 const li2 = document.createElement('li');
 const a2 = document.createElement('a')
-a2.href = '#';
+a2.href = '#section-3-parent-container';
 a2.textContent = 'about';
 li2.appendChild(a2)
 const li3 = document.createElement('li');
 const a3 = document.createElement('a');
-a3.href = '#';
+a3.href = '#section-4-parent-container';
 a3.textContent = 'team';
 li3.appendChild(a3)
 
@@ -464,18 +464,18 @@ const ul2 = document.createElement('ul');
 ul2.id = 'nav-items-2'
 const li4 = document.createElement('li');
 const a4= document.createElement('a');
-a4.href = '#';
-a4.textContent = 'process';
+a4.href = '#section-1-parent-container';
+a4.textContent = 'Contact';
 li4.appendChild(a4)
 const li5 = document.createElement('li');
 const a5 = document.createElement('a')
-a5.href = '#';
-a5.textContent = 'about';
+a5.href = '#section-3-parent-container';
+a5.textContent = 'Imprint';
 li5.appendChild(a5)
 const li6 = document.createElement('li');
 const a6 = document.createElement('a');
-a6.href = '#';
-a6.textContent = 'team';
+a6.href = '#section-5-parent-container';
+a6.textContent = 'Privacy Policy';
 li6.appendChild(a6)
 
 ul2.appendChild(li4)
@@ -501,7 +501,7 @@ navLogoContainer.appendChild(logoImage)
 const hr = document.createElement('hr');
 
 const p = document.createElement('p');
-p.textContent = 'Copyright 2024 Nutranation LLC';
+p.textContent = 'Copyright © 2024 Nutranation LLC';
 const p2 = document.createElement('p');
 p2.textContent = 'All rights reserved';
 
