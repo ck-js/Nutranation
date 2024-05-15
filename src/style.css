@@ -87,7 +87,7 @@ body {
     justify-content: center;
     align-items: center;
 text-align: center;    
-border: 3px solid black;
+/* outline: 4px solid black; */
 
 }    
 #content {
@@ -180,6 +180,7 @@ font-family: var(--extra-bold-montserat-font);
     font-family: var(--extra-thin-montserat-font);
     /* width: 30ch; */
     font-size: 14px;
+    
 }
 .sections-parent {
     height: auto;
@@ -193,6 +194,7 @@ row-gap: var(--mobile-EXTRA-small-spacing);
 background-color: var(--white-smoke-font-color);
 padding-bottom: var(--mobile-small-spacing);
 margin-bottom: var(--mobile-small-spacing);
+
 }
 .mobile-image-wrapper {
     
@@ -232,8 +234,6 @@ text-align: center;
 
 
 #SECTION-1-PARENT-CONTAINER {
-    /* border: 4px solid black; */
-    /* width: 100%; */
 row-gap: 200PX;
 word-wrap: break-word;
 display: flex;
@@ -241,18 +241,18 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
+
 }
 #section-1-parent-container h1 {
     font-size: 35px;
     word-wrap: break-word;
     text-align: center;
     padding: 0 50px;
-
     margin-left: auto;
     margin-right: auto;
 }
 #section-1-parent-container p {
-width: 40ch;
+/* width: 40ch; */
     font-size: 14px;
     word-wrap: break-word;
     text-align: center;
@@ -266,11 +266,10 @@ margin-right: auto;
 }
 
 #section-2-title {
-    width: 21ch;
+padding: 0 2vw;
     font-size: 26px;
 word-wrap: break-word;
-margin-left: auto;
-margin-right: auto;
+
     
 }
 #section-2-parent-container {
@@ -310,35 +309,30 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-left: auto;
+
 }
 #section-3-title {
-    width: 20ch;
+    padding: 0 2vw;
     margin-bottom: var(--mobile-EXTRA-small-spacing);
     font-size: 26px;
 }
 #section-3-cards-container {
     
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 .card-items {
-    max-width: 100%;
-    
+    /* max-width: 100%; */
     background-color: var(--white-smoke-font-color);
     text-align: left;
-    
     padding: 30px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
 justify-content: center;
 align-items: start;
-    
     word-wrap: break-word;
-    
     row-gap: 20px;
-
 }
 .card-items img  {
     width: 100PX;
@@ -360,10 +354,8 @@ line-height: 1.2;
 }
 
 
-
 #section-4-title {
     font-size: 26px;
-    /* width: 20ch; */
     margin-bottom: 25px;
 }
 #section-4-text-container {
@@ -371,7 +363,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
     word-wrap: break-word;
     padding: 0 10px;
 }
